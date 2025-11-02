@@ -2,20 +2,8 @@ on:
   push:
     branches:
       - master
-    #   - main
-    # branches-ignore:
-    #   - master
-    #   - main
-    # tags:
-    #   - v2
-    # tags-ignore:
-    #   - v2
     paths:
-      # - 'routes/*.php'
       - 'routes/**/*.php'
-    # paths-ignore:
-    #   - 'routes/web.php'
-
 jobs:
   print-hello-world:
     runs-on: ubuntu-latest
