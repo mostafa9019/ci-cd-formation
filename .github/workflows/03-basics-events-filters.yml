@@ -12,7 +12,7 @@ on:
     #   - v2
     paths:
       # - 'routes/*.php'
-      - 'routes/**.php'
+      - 'routes/**/*.php'
     # paths-ignore:
     #   - 'routes/web.php'
 
