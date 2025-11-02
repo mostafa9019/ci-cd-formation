@@ -8,7 +8,7 @@ on:
     #   - reopened
   push:
     # branches:
-       - master
+      - master
     #   - main
     # branches-ignore:
     #   - master
@@ -27,5 +27,5 @@ jobs:
   print-hello-world:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Hello World http5
-        run: echo "Hello World http4"
+      - name: Print Hello World
+        run: echo "Hello World"
