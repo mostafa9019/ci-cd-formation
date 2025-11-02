@@ -1,6 +1,6 @@
 name : 02-basics-events.yml
 
-on : [push, pull_request]
+on : push
 
 
 jobs:
@@ -9,3 +9,5 @@ jobs:
     steps:
       - name: Print Hello World4
         run: echo "Hello World4"
+
+        
