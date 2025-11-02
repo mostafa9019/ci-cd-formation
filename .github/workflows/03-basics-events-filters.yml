@@ -1,13 +1,6 @@
-name: 03 Basics Events Filters
-
-on: 
-  # pull_request:
-  #   types: [closed, reopened]
-    # types:
-    #   - closed
-    #   - reopened
+on:
   push:
-    # branches:
+    branches:
       - master
     #   - main
     # branches-ignore:
