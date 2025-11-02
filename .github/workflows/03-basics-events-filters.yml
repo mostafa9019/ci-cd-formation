@@ -1,12 +1,16 @@
+name: Test Paths Trigger
+
 on:
   push:
     branches:
       - master
     paths:
-      - 'routes/**/*.php'
+      - "routes/**/*.php"
+
 jobs:
   print-hello-world:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Hello World
-        run: echo "Hello World"
+      - name: Show changed file list
+        run: echo "Workflow triggered on push with path filter!"
+
