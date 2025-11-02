@@ -27,5 +27,5 @@ jobs:
   print-hello-world:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Hello World http
-        run: echo "Hello World http"
+      - name: Print Hello World http3
+        run: echo "Hello World http3"
