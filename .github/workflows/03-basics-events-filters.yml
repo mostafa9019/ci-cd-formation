@@ -8,7 +8,7 @@ on:
     #   - reopened
   push:
     # branches:
-    #   - master
+       - master
     #   - main
     # branches-ignore:
     #   - master
@@ -18,8 +18,8 @@ on:
     # tags-ignore:
     #   - v2
     paths:
-       - 'routes/web.php'
-      # - 'routes/**.php'
+      # - 'routes/*.php'
+      - 'routes/**.php'
     # paths-ignore:
     #   - 'routes/web.php'
 
@@ -28,4 +28,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Hello World http5
-        run: echo "Hello World http5"
+        run: echo "Hello World http4"
