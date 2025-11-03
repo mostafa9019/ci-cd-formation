@@ -8,8 +8,8 @@ on:
 jobs:
   print-hello-world:
     runs-on: ubuntu-latest
-    # if: ${{ github.event.pull_request.merged == true }}
+      if: ${{ github.event.pull_request.merged == true }}
       if: github.event.pull_request.merged == true
     steps:
-      - name: Print Hello World3
-        run: echo "Hello World3"
+      - name: Print Hello World4
+        run: echo "Hello World4"
