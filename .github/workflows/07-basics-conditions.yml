@@ -1,0 +1,15 @@
+name: 07 Basics Conditions
+run-name: ${{ github.actor }} Explaining context data - Try Number ${{ github.run_number }}
+on: 
+  pull_request:
+    types: 
+      - closed
+
+jobs:
+  print-hello-world:
+    runs-on: ubuntu-latest
+      if: ${{ github.event.pull_request.merged == true }}
+      if: github.event.pull_request.merged == true
+    steps:
+      - name: Print Hello World4
+        run: echo "Hello World4"
