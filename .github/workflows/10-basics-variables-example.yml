@@ -20,4 +20,4 @@ jobs:
           -H "Authorization: Bearer ${{ secrets.MY_SECRET_TEST }}" \
           -H "X-GitHub-Api-Version: 2022-11-28" \
           ${{ vars.MY_VAR_TEST }} \
-          -d '{"title":"Testing FailureTEST","body":"This issue opened by github actionsTEST"}'
+          -d '{"title":"Testing Failure","body":"This issue opened by github actions"}'
