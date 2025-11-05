@@ -6,7 +6,7 @@ on:
 
 env:
   RUN_NUMBER: ${{ github.run_number > 1 && 'greater than 1' || 'less than 1' }}
-  TESTING_VALUE: ${{ contains('Hello World', 'Wor') }}
+  TESTING_VALUE: ${{ contains('Hello World', 'Word') }}
 
 jobs:
   print-hello-world:
