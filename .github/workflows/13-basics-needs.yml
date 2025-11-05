@@ -17,7 +17,8 @@ jobs:
     needs: Build
     steps:
       - name: Test Project
-        run: echo "Test Project Dependency"
+        # run: echo "Test Project Dependency"
+        run: exit 1
 
   Deploy:
     runs-on: ubuntu-latest
