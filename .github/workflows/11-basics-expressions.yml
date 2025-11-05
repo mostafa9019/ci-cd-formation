@@ -1,22 +1,21 @@
 name: 11 Basics Expressions
 run-name: ${{ github.actor }} Explaining Expressions - Try Number ${{ github.run_number }}
 
-env: 
-  RUN_NUMBER: ${{ github.run_number > 1 && 'greater than 1' || 'less than 1' }}
-  TESTING_VALUE: ${{ contains('Hello Wolrd', 'Wor') }}
+on:
+  workflow_dispatch:
 
-on: 
-  workflow_dispatch
+env:
+  RUN_NUMBER: ${{ github.run_number > 1 && 'greater than 1' || 'less than 1' }}
+  TESTING_VALUE: ${{ contains('Hello World', 'Wor') }}
 
 jobs:
   print-hello-world:
     runs-on: ubuntu-latest
     steps:
       - name: NUMBER
-         run: echo ${{ env.RUN_NUMBER }}
-         
-        # run: exit 1
-      
+        run: echo "${{ env.RUN_NUMBER }}"
+
+      # - run: exit 1
+
       - name: TESTING
-        # if: ${{ failure() }}
-        run: echo ${{ env.TESTING_VALUE }}
+        run: echo "${{ env.TESTING_VALUE }}"
